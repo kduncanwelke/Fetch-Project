@@ -40,7 +40,7 @@ I worked on this project for under two weeks, with variable hours each day based
 
 The rest of the time I spent coding and building out the functionality, beginning with networking and JSON parsing, then moving into display and manipulation of the recipe data. I focused on the data and networking first, then moved on to the interface, as the core functionality has to be the first priority. I reworked some areas of the code from a version that functioned to one that had better separation of concerns and reusability, and replaced any code that wasn't DRY.
 
-### Trade-offs and Decisions
+## Trade-offs and Decisions
 I decided to open the links to websites and videos in the browser, rather than in a WebView. SwiftUI does not have its own WebView, so I would have had to import the UIKit WebView, which has its own inconsistencies. For the sake of providing a reliable experience for users I chose to open links in the browser, since it is reliable, familiar, and built-in. 
 
 I also chose to display recipes and their details in lists, rather than using a NavigationSplitView, due to aesthetics, consistency of the experience, and personal preference. The visual of moving from one list to another creates a cohesive experience and design, whereas a NavigationSplitView creates two halves that are visually different, with a distinct sidebar. I wanted to avoid the visual distinction of a split view in favor of a more united design that offers the same experience regardless of device. 
